@@ -1,0 +1,129 @@
+.gui_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 96px;
+}
+
+.gui_navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gui_navbar-links_GUIlogo {
+    margin-right: 25px;
+}
+
+.gui_navbar-links_GUIlogo img {
+    width: 128px;
+    height: 40px;
+}
+
+.gui_navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.gui_navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gui_navbar-links_container p, 
+.gui_navbar-sign p,
+.gui_navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: capitalize;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.gui_navbar-sign button,
+.gui_navbar-menu_container button {
+    padding: 8px 16px;
+    color:#fff;
+    background: #1a73e8;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.gui_navbar-menu {
+    margin-left: 16px;
+    display: none;
+    position: relative;
+}
+
+.gui_navbar-menu svg {
+    cursor: pointer;
+}
+
+.gui_navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 32px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 16px;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.gui_navbar-menu_container p {
+    margin: 16px 0;
+}
+
+.gui_navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .gui_navbar-links_container {
+        display: none;
+    }
+    .gui_navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gui_navbar-menu {
+        padding: 32px 64px;
+    }
+    .gui_navbar-menu_container {
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gui_navbar-menu {
+        padding: 32px;
+    }
+    .gui_navbar-sign {
+        display: none;
+    }
+    .gui_navbar-menu_container {
+        top: 70px;
+    }
+    .gui_navbar-menu_container-links-sign {
+        display: block;
+    }
+}
