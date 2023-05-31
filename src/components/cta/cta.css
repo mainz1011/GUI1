@@ -1,0 +1,77 @@
+.gui_cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 32px;
+    margin: 64px;
+    border-radius: 16px;
+    background: var(--gradient-bar)
+}
+
+.gui_cta-advocate {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+}
+
+.gui_cta-advocate p {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.gui_cta-advocate h3 {
+    font-family: var(--font-family);
+    font-size: 28px;
+    line-height: 45px;
+    font-weight: 800;
+}
+
+.gui_cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.gui_cta-button button {
+    background: #000;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 8px 16px;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+@media screen and (max-width: 650px) {
+    .gui_cta {
+        flex-direction: column;
+    }
+    .gui_cta-button {
+        margin: 32px 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gui_cta {
+        flex-direction: column;
+        margin: 64px 32px;
+    }
+    .gui_cta-advocate h3 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .gui_cta-button button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
